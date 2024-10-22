@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Video from '../../videos/video.mp4';
-import './HeroSection.css'; // Import the CSS file
+import './HeroSection.css';
 
 const HeroSection = () => {
     const [hover, setHover] = useState(false);
