@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Sidebar.css'; // Import the CSS file
+import '../../styles/Sidebar.css';
 
 const Sidebar = ({ isOpen, toggle }) => {
     return (
