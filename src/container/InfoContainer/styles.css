@@ -1,0 +1,164 @@
+/* Info Section CSS */
+.info-section {
+    color: #fff;
+    background: #010606;
+    padding: 100px 0;
+    /* width: 100%; */
+    margin-left: -8px;
+    margin-right: -8px;
+
+}
+
+.info-section.lightBg {
+    background: #f9f9f9;
+
+}
+
+.info-wrapper {
+    display: grid;
+    z-index: 1;
+    height: 860px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+    justify-content: center;
+
+}
+
+.info-row {
+    display: grid;
+    grid-auto-columns: minmax(auto, 1fr);
+    align-items: center;
+    grid-template-areas: 'col1 col2';
+}
+
+.info-row.imgStart {
+    grid-template-areas: 'col2 col1';
+}
+
+.column1,
+.column2 {
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.text-wrapper {
+    max-width: 540px;
+    padding-bottom: 60px;
+}
+
+.top-line {
+    color: #ff7900;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.heading {
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #010606;
+}
+
+.heading.lightText {
+    color: #f7f8fa;
+}
+
+.subtitle {
+    max-width: 440px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.subtitle.darkText {
+    color: #010606;
+}
+
+.img-wrap {
+    max-width: 555px;
+    height: 100%;
+}
+
+.info-img {
+    width: 100%;
+    padding-right: 0;
+}
+
+/* Button CSS */
+.btn {
+    border-radius: 50px;
+    white-space: nowrap;
+    padding: 12px 30px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: #ff7900;
+}
+
+.btn-secondary {
+    background-color: #010606;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #010606;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: #ff7900;
+}
+
+.btn-secondary:hover {
+    background-color: #ff7900;
+    color: #fff;
+}
+
+/* Web responsive Queries   */
+
+@media screen and (max-width: 768px) {
+   
+
+    .info-row {
+        grid-template-areas: 'col1' 'col2';
+    }
+
+    .heading {
+        font-size: 32px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+
+    .info-wrapper {
+        padding: 0 16px;
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+}
