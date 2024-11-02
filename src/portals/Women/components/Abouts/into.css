@@ -1,0 +1,8 @@
+.intro {
+    background-image: url('../../../../assets/Images/woman_in_sports_bra.png');
+    background-size: cover;
+    background-position: 30%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    scroll-snap-align: start;
+}
